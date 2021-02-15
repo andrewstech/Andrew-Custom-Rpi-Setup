@@ -5,9 +5,13 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker pi
 wget https://updates.duplicati.com/beta/duplicati_2.0.5.1-1_all.deb
-sudo dpkg -i duplicati_2.0.5.1-1_all.deb
-sudo pip3 install docker-compose
 sudo su
+sudo dpkg -i duplicati_2.0.5.1-1_all.deb
+rm /lib/systemd/system/duplicati.service
+cd /lib/systemd/system/
+wget https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/duplicati.service
+systemctl enable duplicati
+sudo pip3 install docker-compose
 mkdir /etc/proxy
 cd /etc/proxy
 wget https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/proxy/docker-compose.yml
