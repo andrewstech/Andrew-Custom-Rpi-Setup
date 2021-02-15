@@ -1,0 +1,14 @@
+  
+[Unit]
+Description=Duplicati web-server
+After=network.target
+
+[Service]
+Nice=19
+IOSchedulingClass=idle
+EnvironmentFile=-/etc/default/duplicati
+ExecStart=/usr/bin/duplicati-server $DAEMON_OPTS --webservice-port=8200 --webservice-interface=any
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
