@@ -7,6 +7,7 @@ sudo usermod -aG docker pi
 wget https://updates.duplicati.com/beta/duplicati_2.0.5.1-1_all.deb
 sudo dpkg -i duplicati_2.0.5.1-1_all.deb
 sudo pip3 install docker-compose
+sudo su
 mkdir /etc/proxy
 cd /etc/proxy
 wget https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/proxy/docker-compose.yml
