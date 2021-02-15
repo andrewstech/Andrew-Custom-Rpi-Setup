@@ -13,8 +13,10 @@ wget https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/
 docker-compose up -d
 cd
 sudo apt-get install openjdk-8-jdk
+sudo apt install mariadb-server
 wget https://packagecloud.io/pufferpanel/pufferpanel/packages/raspbian/buster/pufferpanel_2.1.3_arm64.deb/download.deb
 dpkg -i download.deb
 systemctl enable pufferpanel
 systemctl start pufferpanel
 pufferpanel user add admin
+sudo mysql_secure_installation
