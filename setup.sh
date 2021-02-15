@@ -5,7 +5,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 sudo usermod -aG docker pi
 wget https://updates.duplicati.com/beta/duplicati_2.0.5.1-1_all.deb
-dpkg -i duplicati_2.0.5.1-1_all.deb
+sudo dpkg -i duplicati_2.0.5.1-1_all.deb
 sudo pip3 install docker-compose
 mkdir /etc/proxy
 cd /etc/proxy
@@ -15,7 +15,7 @@ cd
 sudo apt-get install openjdk-8-jdk -y
 sudo apt install mariadb-server -y
 wget https://packagecloud.io/pufferpanel/pufferpanel/packages/raspbian/buster/pufferpanel_2.1.3_arm64.deb/download.deb
-dpkg -i download.deb
+sudo dpkg -i download.deb
 systemctl enable pufferpanel
 systemctl start pufferpanel
 pufferpanel user add admin
