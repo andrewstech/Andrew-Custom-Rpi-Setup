@@ -16,6 +16,7 @@ mkdir /etc/proxy
 cd /etc/proxy
 wget https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/proxy/docker-compose.yml
 docker-compose up -d
+sudo apt --fix-broken install
 cd
 sudo apt install default-jdk -y
 sudo apt install mariadb-server -y
