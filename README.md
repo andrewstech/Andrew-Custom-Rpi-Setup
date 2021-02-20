@@ -16,5 +16,7 @@ sudo nano /etc/rc.local
  
  sudo apt update
  sudo apt upgrade
+ 
+ sudo reboot
 ----------------------------------------------
 curl -sSL https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/setup.sh | bash
