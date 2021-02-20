@@ -1,5 +1,6 @@
 # Andrew-Custom-Rpi-Setup
 
+[Download 64bit image](https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2020-05-28/2020-05-27-raspios-buster-arm64.zip) 
 Prerun
 
 sudo /etc/init.d/dphys-swapfile stop
