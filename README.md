@@ -21,3 +21,7 @@ sudo nano /etc/rc.local
  sudo reboot
 ----------------------------------------------
 curl -sSL https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/setup.sh | bash
+
+Hass
+-------------------------------------------------------------
+curl -sSL https://raw.githubusercontent.com/andrewstech/Andrew-Custom-Rpi-Setup/main/hass.sh | bash
