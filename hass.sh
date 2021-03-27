@@ -7,7 +7,6 @@ apt install network-manager apparmor jq dbus -y
 docker pull andrewstech/alpha-video:latest
 curl -Lo installer.sh https://raw.githubusercontent.com/project-bridge/supervised-installer/master/installer.sh
 bash installer.sh --machine raspberrypi4-64
-curl -sSL https://download.argon40.com/argonone-setup-osmc.sh | bash
 curl -sSL https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh
 
 
